@@ -1,0 +1,13 @@
+<div class="bar bar-light bar-subheader search-box">
+    <input type="text"
+           class="full-width"
+           placeholder="{{::vm.placeholder}}"
+           ng-change="vm.search()"
+           ng-click="vm.focus($event)"
+           ng-model="vm.searchString">
+    <button ng-show="vm.searchString.length"
+            class="button button-icon ion-android-close input-button clear-search-button"
+            ng-click="vm.clearSearch()"
+            ng-class="{'visible': !vm.hidden}">
+    </button>
+</div

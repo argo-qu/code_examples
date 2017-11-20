@@ -1,0 +1,23 @@
+<div class="card" id="flash-card-{{vm.index}}" delegate-handle="flash-card-{{vm.index}}">
+    <div class="item item-text-wrap card-header">
+        {{::vm.cardData.title}}
+    </div>
+
+    <img class="item item-flash-image"
+         ng-if="::vm.cardData.thumbnail && (!vm.cardData.blocked || vm.isPremium)"
+         ng-src="{{::vm.cardData.thumbnail}}"
+         flash-card-image-loading>
+
+    <div class="item card-content item-text-wrap"
+         ng-if="::!vm.cardData.blocked || vm.isPremium"
+         ng-show="vm.cardData.description.length > 0"
+         ng-bind-html="::vm.cardData.description">
+    </div>
+
+    <div class="item item-text-wrap blocked"
+         ng-if="::vm.cardData.blocked && !vm.isPremium"
+         ng-click="vm.showOffer($event)">
+        <div class="icon-lock"></div>
+        <h3>{{::vm.unlockText}}</h3>
+    </div>
+</div>

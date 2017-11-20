@@ -1,0 +1,16 @@
+<ion-content class="padding scroll-content ionic-scroll overflow-scroll has-header has-tabs">
+
+    <div class="card chapter" ng-repeat="chapter in ::vm.chapters track by $index" ng-click="vm.openChapter($index)">
+        <div class="item item-image image-apps" ng-style="{'background-image': 'url( {{chapter.thumbnail}} )' }"></div>
+        <div class="overlay"></div>
+        <a href="" class="title">
+            {{::chapter.title}}<br><br>
+        </a>
+        <div class="count">
+            {{::chapter.terms.length}} cards
+        </div>
+    </div>
+
+    <div style="width: 100%; height: 25px"></div>
+
+</ion-content>

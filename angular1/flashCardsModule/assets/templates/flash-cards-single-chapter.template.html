@@ -1,0 +1,12 @@
+<flash-card-filter instance-id="vm.instanceId" list="vm.cardsList"></flash-card-filter>
+
+<ion-content class="padding scroll-content ionic-scroll overflow-scroll has-header has-subheader has-tabs">
+
+    <div ng-show="vm.spinnerActive" class="centered-spinner">
+        <ion-spinner></ion-spinner>
+    </div>
+
+    <div ng-if="vm.loaded" ng-show="!vm.spinnerActive">
+        <flash-card index="$index" instance-id="vm.instanceId" ng-repeat="card in ::vm.cardsList track by $index" card-data="card"></flash-card>
+    </div>
+</ion-content>

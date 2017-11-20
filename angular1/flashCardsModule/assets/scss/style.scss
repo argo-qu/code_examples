@@ -1,0 +1,192 @@
+$flash-cards-default-background-color: #e7e7e7 !default;
+$flash-cards-card-border-color: #ededed !default;
+$flash-cards-card-blocked-color: #848484 !default;
+
+$flash-cards-chapter-color: #192e7c !default;
+$flash-cards-chapter-border-color: #192e7c !default;
+$flash-cards-chapter-count-color: rgba(0,0,0,.55) !default;
+
+$search-box-background-color:              rgba(0, 0, 0, 0.16) !default;
+$search-box-text-color:                    #faf0ff !default;
+$search-box-placeholder-color:             rgba(0, 0, 0, 0.5) !default;
+
+flash-card-filter input.full-width {
+  width: 100%;
+}
+
+flash-card-filter .offset{
+  height: 44px;
+  width: 100%;
+}
+
+flash-card-filter .search-box {
+  position: fixed !important;
+  top: 44px;
+}
+
+flash-card-filter .search-box input {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+flash-card-filter .clear-search-button:before {
+  font-size: 16px !important;
+}
+
+flash-card-filter .clear-search-button {
+  position: absolute;
+  right: 10px;
+  display: none;
+}
+
+flash-card-filter .clear-search-button.visible {
+  display: block;
+}
+
+/*flash-card-filter .search-box input {
+  border: 0 !important;
+  text-align: center !important;
+  border-radius: 30px !important;
+  background-color: $search-box-background-color !important;
+  color: $search-box-text-color !important;
+}*/
+
+flash-card-filter .search-box input::-webkit-input-placeholder {
+  color: $search-box-placeholder-color  !important;
+}
+
+flash-card-filter .search-box input::-moz-placeholder {
+  color: $search-box-placeholder-color  !important;
+}
+
+flash-card-filter .search-box input:-ms-input-placeholder {
+  color: $search-box-placeholder-color  !important;
+}
+
+flash-card-filter .search-box input:-moz-placeholder {
+  color: $search-box-placeholder-color  !important;
+}
+
+flash-cards-single-chapter ion-content {
+  padding-top: 0 !important;
+  background-color: $flash-cards-default-background-color !important;
+}
+
+flash-cards-single-chapter ion-content .centered-spinner {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 40vh;
+  left: 50%;
+  margin-top: -14px;
+  margin-left: -14px;
+}
+
+flash-card .item {
+  border-color: rgb(241, 241, 241);
+}
+
+flash-card .card {
+  border-bottom: 3px solid $flash-cards-card-border-color;
+  box-shadow: none;
+}
+
+flash-card .item-flash-image {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+flash-card .icon-lock {
+  background-image: url('../img/flash-cards-icon-locked.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+}
+
+flash-card .item.blocked {
+  text-align: center;
+  color: $flash-cards-card-blocked-color;
+}
+
+flash-card .item.blocked h3 {
+  color: $flash-cards-card-blocked-color;
+}
+
+flash-card .card-header {
+  padding: 20px ;
+  font-size: 22px ;
+  font-weight: bold;
+}
+
+flash-card .card-content {
+  padding: 20px;
+}
+
+flash-cards-chapters .chapter {
+  position: relative;
+}
+
+flash-cards-chapters ion-content {
+  background-color: $flash-cards-default-background-color !important;
+}
+
+.platform-ios flash-cards-chapters ion-content {
+  padding-bottom: 40px;
+}
+
+flash-cards-chapters .chapter {
+  border-top: 2px solid $flash-cards-chapter-border-color;
+  box-shadow: none;
+}
+
+flash-cards-chapters .chapter .title {
+  letter-spacing: normal;
+  position: absolute;
+  color: $flash-cards-chapter-color;
+  top: 30px;
+  left: 20px;
+  right: 35%;
+  z-index: 2;
+  text-align: left;
+  font-size: 25px;
+  line-height: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+flash-cards-chapters .chapter .item-image {
+  height: 155px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+flash-cards-chapters .chapter .count {
+  color: $flash-cards-chapter-count-color;
+  font-size: 16px;
+  position: absolute;
+  top: 115px;
+  left: 20px;
+  right: 0;
+  text-align: left;
+  z-index: 2;
+
+}
+
+.platform-ios flash-cards-chapters  .bar.bar-subheader {
+  top: 64px !important;
+}
+
+.flash-card-image-loading {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
