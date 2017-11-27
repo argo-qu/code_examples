@@ -55,19 +55,7 @@ export class MapPage {
             wayPointStartIconColor: "#5051ff",
             wayPointStartIconFillColor: "#ffffff",
             wayPointFinishIconColor: "#ffffff",
-            wayPointFinishIconFillColor: "#10ff00",
-            //
-            // !!! Вот это взял из доки яндекс карт - наслаждайся !!!
-            //
-            // Задаем собственную картинку для последней путевой точки. (аналогично для первой путевой)
-            // wayPointFinishIconLayout: "default#image",
-            // wayPointFinishIconImageHref: "images/sokolniki.png",
-            // wayPointFinishIconImageSize: [30, 30],
-            // wayPointFinishIconImageOffset: [-15, -15],
-            //
-            // Внешний вид линии пешеходного маршрута.
-            // routeActivePedestrianSegmentStrokeStyle: "solid",
-            // routeActivePedestrianSegmentStrokeColor: "#00CDCD",
+            wayPointFinishIconFillColor: "#10ff00",            
         });
         map.geoObjects.add(multiRoute);
     }
