@@ -29,11 +29,11 @@ export class AuthGuard implements CanActivate {
 
         firebase.initializeApp({
             apiKey: "################################",
-            authDomain: ""################################",
-            databaseURL: ""################################",
-            projectId: ""################################",
-            storageBucket: ""################################",
-            messagingSenderId: ""################################"
+            authDomain: "################################",
+            databaseURL: "################################",
+            projectId: "################################",
+            storageBucket: "################################",
+            messagingSenderId: "################################"
         });
     }
 
